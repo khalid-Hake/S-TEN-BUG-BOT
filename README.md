@@ -24,7 +24,7 @@
 ---
 
 ## CREATE YOUR FORK
-<a href="/fork">
+<a href="https://github.com/Bot-hostin/S-TEN-BUG-BOT/fork">
   <img title="𝙎-𝙏𝞢𝞜 𝘽𝙊𝙏 𝘽𝙐𝙂" src="https://img.shields.io/badge/FORK 𝑫𝑹𝑲-𝙎-𝙏𝞢𝞜-red?color=red&style=for-the-badge&logo=stackshare">
 </a>
 
