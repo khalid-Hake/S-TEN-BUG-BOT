@@ -79,46 +79,33 @@ I am not responsible for any damage caused by this bot. Use this bot at your own
 ## GitHub Deployment
 
 ```yaml
-name: Node.js CI
+atp update
+   
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: '0 */6 * * *'  
+apt upgrade
 
-jobs:
-  build:
+pkg update && pkg upgrade
 
-    runs-on: ubuntu-latest
+pkg install bash
 
-    strategy:
-      matrix:
-        node-version: [20.x]
+ pkg install git
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+ pkg install nodejs
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+pkg install ffmpeg
 
-    - name: Install dependencies
-      run: npm install
+pkg install wget
 
-    - name: Install FFmpeg
-      run: sudo apt-get install -y ffmpeg
+pkg install imagemagick
 
-    - name: Start application with timeout
-      run: |
-        timeout 21590s npm start  # Limits run to 5h 59m 50s
+ pkg install yarn
 
-    - name: Save state (Optional)
-      run: |
-        ./save_state.sh
+termux-setup-storage
+
+git clone https://github.com/Bot-hostin/S-TEN-BUG-BOT
+
+ cd S-TEN-BUG-BOT
+ 
+ yarn install
+ 
+ npm start
